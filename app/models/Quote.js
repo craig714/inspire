@@ -17,9 +17,9 @@ export class Quote {
   get quoteDetailsTemplate() {
     return  /*html*/ `
     <div id="quote-details" class="col-12 container-quote">
-    <p class="fs-3">${this.content}</p> 
+    <p class="fs-3">"${this.content}"</p> 
     
-    <p class="fs-4 secret-text secret-text:hover">${this.author}</p>
+    <p class="fs-4 secret-text secret-text:hover">-${this.author}-</p>
     </div>
      
     

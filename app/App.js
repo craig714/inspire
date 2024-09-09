@@ -3,6 +3,7 @@ import { router } from './router-config.js';
 import { ToDoController } from './controllers/ToDoController.js';
 import { InspirePictureController } from './controllers/PictureController.js';
 import { InspireQuoteController } from './controllers/QuoteController.js';
+
 const USE_ROUTER = false
 
 class App {

@@ -12,6 +12,9 @@ class ObservableAppState extends EventEmitter {
   picture = null
   /**@type {Quote} */
   quote = null
+  /**@type {ToDos} */
+  toDos = null
 }
+
 
 export const AppState = createObservableProxy(new ObservableAppState())

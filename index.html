@@ -55,22 +55,23 @@
       </div>
     </section>
   </main>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
-    <div class="offcanvas-header">
+  <div class="offcanvas offcanvas-end" id="offcanvasExample">
+    <div class="offcanvas-header bg-warning">
       <h5>To Do List</h5>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body bg-dark">
       <div class="mb-3">
         <input type="text" class="form-control" id="to-do-input" placeholder="Add a To Do">
-        <button class="btn btn-info mt-2" id="save">Save To Do</button>
+        <button onclick="app.ToDoController.savedToDo()" class="btn btn-info mt-2" id="save">Save To Do</button>
       </div>
       <ul class="list-group task-list" id="to-do-list">
-        <!-- Tasks will be added here -->
+        <li class="bg-warning mb-5"></li>
+
       </ul>
     </div>
   </div>
-  <button class="btn btn-info w-100" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-    Thee To Do List
+  <button class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+    <i class="mdi mdi-list-box">To Do List</i>
   </button>
 
 
