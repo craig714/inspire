@@ -12,31 +12,15 @@ export class ToDo {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   get toDoDetailsTemplate() {
-    return `
-  
-  
-  
-  
-  
-  
-  
+    return /*html*/ `
+          <div>
+          <input onchange="app.ToDoController.checkMark('${this.id}')" type="checkbox" ${this.completed ? 'checked' : ''}>
+          <span>${this.description}</span>
+        </div>
+        <div>
+          <span onclick="app.ToDoController.deleteToDo('${this.id}')" class="mdi mdi-delete"></span>
+        </div>
   `
   }
 

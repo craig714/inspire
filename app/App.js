@@ -3,6 +3,7 @@ import { router } from './router-config.js';
 import { ToDoController } from './controllers/ToDoController.js';
 import { InspirePictureController } from './controllers/PictureController.js';
 import { InspireQuoteController } from './controllers/QuoteController.js';
+import { ClockController } from './controllers/ClockController.js';
 
 const USE_ROUTER = false
 
@@ -15,6 +16,8 @@ class App {
   InspirePictureController = new InspirePictureController()
 
   InspireQuoteController = new InspireQuoteController()
+
+  ClockController = new ClockController()
 
   constructor() {
     if (USE_ROUTER) {

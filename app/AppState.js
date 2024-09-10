@@ -1,7 +1,9 @@
-// @ts-nocheck
 import { Picture } from './models/Pictures.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
+import { Quote } from './models/Quote.js'
+import { ToDo } from './models/ToDo.js'
+import { Clock } from './models/Clock.js'
 
 class ObservableAppState extends EventEmitter {
 
@@ -12,8 +14,11 @@ class ObservableAppState extends EventEmitter {
   picture = null
   /**@type {Quote} */
   quote = null
-  /**@type {ToDos} */
-  toDos = null
+  /**@type {ToDo[]} */
+  myToDos = []
+  /**@type {Clock} */
+  date = null
+
 }
 
 
